@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.css"
             ],
             "scripts": []
@@ -72,6 +75,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.css"
             ],
             "scripts": [],
@@ -115,6 +121,46 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-fveh-lib": {
+      "root": "projects/ng-fveh-lib",
+      "sourceRoot": "projects/ng-fveh-lib/src",
+      "projectType": "library",
+      "prefix": "fveh",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-fveh-lib/tsconfig.lib.json",
+            "project": "projects/ng-fveh-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-fveh-lib/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-fveh-lib/src/test.ts",
+            "tsConfig": "projects/ng-fveh-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-fveh-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-fveh-lib/tsconfig.lib.json",
+              "projects/ng-fveh-lib/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
