@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { SimpleReactiveFormComponent } from './components/simple-reactive-form/simple-reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgFvehLibModule } from 'ng-fveh-lib';
+
 
 @NgModule({
   declarations: [AppComponent, SimpleReactiveFormComponent],
@@ -14,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
+    NgFvehLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgFvehLibComponent } from './ng-fveh-lib.component';
+import { ErrorsPresenterComponent } from './errors-presenter.component';
 
-describe('NgFvehLibComponent', () => {
-  let component: NgFvehLibComponent;
-  let fixture: ComponentFixture<NgFvehLibComponent>;
+describe('ErrorsPresenterComponent', () => {
+  let component: ErrorsPresenterComponent;
+  let fixture: ComponentFixture<ErrorsPresenterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgFvehLibComponent ]
+      declarations: [ ErrorsPresenterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgFvehLibComponent);
+    fixture = TestBed.createComponent(ErrorsPresenterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,10 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { NgFvehLibComponent } from './ng-fveh-lib.component';
+import { ErrorsPresenterComponent } from './components/errors-presenter/errors-presenter.component';
 
 @NgModule({
-  imports: [
-  ],
-  declarations: [NgFvehLibComponent],
-  exports: [NgFvehLibComponent]
+  imports: [CommonModule],
+  exports: [ErrorsPresenterComponent],
+  declarations: [ErrorsPresenterComponent],
 })
-export class NgFvehLibModule { }
+export class NgFvehLibModule {}
