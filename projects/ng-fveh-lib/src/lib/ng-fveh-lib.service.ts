@@ -1,9 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
+import { Messages } from './interfaces';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NgFvehLibService {
+  constructor(@Inject('messagesObject') public messagesObject: Messages) {}
 
-  constructor() { }
+  getMessage(errorType: string): string {
+    const message = this.messagesObject[errorType]();
+    return message;
+  }
 }

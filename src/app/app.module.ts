@@ -8,7 +8,6 @@ import { SimpleReactiveFormComponent } from './components/simple-reactive-form/s
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgFvehLibModule } from 'ng-fveh-lib';
 
-
 @NgModule({
   declarations: [AppComponent, SimpleReactiveFormComponent],
   imports: [
@@ -16,7 +15,7 @@ import { NgFvehLibModule } from 'ng-fveh-lib';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
-    NgFvehLibModule,
+    NgFvehLibModule.forRoot({ maxlength: () => 'Works!!!' }),
   ],
   providers: [],
   bootstrap: [AppComponent],
