@@ -7,6 +7,7 @@ import { MaterialModule } from './material/material.module';
 import { SimpleReactiveFormComponent } from './components/simple-reactive-form/simple-reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgFvehLibModule } from 'ng-fveh-lib';
+import ErrorsMessages from './ErrorsMessages';
 
 @NgModule({
   declarations: [AppComponent, SimpleReactiveFormComponent],
@@ -15,7 +16,7 @@ import { NgFvehLibModule } from 'ng-fveh-lib';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
-    NgFvehLibModule.forRoot({ maxlength: () => 'Works!!!' }),
+    NgFvehLibModule.forRoot(ErrorsMessages),
   ],
   providers: [],
   bootstrap: [AppComponent],

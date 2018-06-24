@@ -16,7 +16,10 @@ export class SimpleReactiveFormComponent {
   initForm() {
     this.form = this.fb.group(
       {
-        input: this.fb.control('', Validators.maxLength(5)),
+        input: this.fb.control('', [
+          Validators.required,
+          Validators.maxLength(5),
+        ]),
       },
       { updateOn: 'blur' },
     );

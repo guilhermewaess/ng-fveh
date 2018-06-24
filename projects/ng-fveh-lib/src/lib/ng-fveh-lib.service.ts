@@ -7,8 +7,8 @@ import { Messages } from './interfaces';
 export class NgFvehLibService {
   constructor(@Inject('messagesObject') public messagesObject: Messages) {}
 
-  getMessage(errorType: string): string {
-    const message = this.messagesObject[errorType]();
+  getMessage(errorType: string, errorPayload: { [key: string]: any }): string {
+    const message = this.messagesObject[errorType](errorPayload);
     return message;
   }
 }

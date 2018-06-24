@@ -10,14 +10,15 @@ import { NgFvehLibService } from '../../ng-fveh-lib.service';
 export class ErrorsPresenterComponent {
   @Input() field: FormControl;
 
-  constructor(private service: NgFvehLibService) {}
+  constructor(public service: NgFvehLibService) {}
 
   getFieldErrors() {
     return Object.keys(this.field.errors);
   }
 
   getErrorMessage(errorType: string) {
-    return this.service.getMessage(errorType);
+    const errorPayload = this.field.errors[errorType];
+    return this.service.getMessage(errorType, errorPayload);
   }
 
   hasErrors() {

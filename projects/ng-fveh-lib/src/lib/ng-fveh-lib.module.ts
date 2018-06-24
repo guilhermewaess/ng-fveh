@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material';
 import { ErrorsPresenterComponent } from './components/errors-presenter/errors-presenter.component';
-import { ModuleWithProviders } from '@angular/core';
 import { NgFvehLibService } from './ng-fveh-lib.service';
 import { Messages } from './interfaces';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, MatFormFieldModule],
   exports: [ErrorsPresenterComponent],
   declarations: [ErrorsPresenterComponent],
 })
