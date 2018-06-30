@@ -4,9 +4,15 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
+  MatTabsModule,
 } from '@angular/material';
 
-const components = [MatCardModule, MatFormFieldModule, MatInputModule];
+const components = [
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatTabsModule,
+];
 
 @NgModule({
   imports: [CommonModule, ...components],
