@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@angular/core';
+import { Injectable, Inject, Optional } from '@angular/core';
 import { Messages } from './interfaces';
 import { ERROR_MESSAGES_CONFIGURATION } from './Injectors';
 
@@ -6,7 +6,9 @@ import { ERROR_MESSAGES_CONFIGURATION } from './Injectors';
   providedIn: 'root',
 })
 export class NgFvehLibService {
-  constructor(@Inject(ERROR_MESSAGES_CONFIGURATION) public messagesObject: Messages) {}
+  constructor(
+    @Inject(ERROR_MESSAGES_CONFIGURATION) public messagesObject: Messages,
+  ) {}
 
   getMessage(errorType: string, errorPayload: { [key: string]: any }): string {
     const message = this.messagesObject[errorType](errorPayload);

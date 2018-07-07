@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ErrorsPresenterComponent } from './components/errors-presenter/errors-presenter.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgFvehLibModule, MESSAGES_CONFIGURATION } from 'ng-fveh-lib';
+import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh-lib';
 import ErrorsMessages from './ErrorsMessages';
 import { GroupMatchValidationComponent } from './components/group-match-validation/group-match-validation.component';
 
@@ -26,7 +26,7 @@ import { GroupMatchValidationComponent } from './components/group-match-validati
   providers: [
     // https://github.com/angular/angular/issues/23609
     // using this provider here because of this issue.
-    { provide: MESSAGES_CONFIGURATION, useValue: ErrorsMessages }
+    { provide: ERROR_MESSAGES_CONFIGURATION, useValue: ErrorsMessages },
   ],
   bootstrap: [AppComponent],
 })
