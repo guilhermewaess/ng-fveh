@@ -1,5 +1,3 @@
-import { TestBed, inject } from '@angular/core/testing';
-
 import { NgFvehLibService } from './ng-fveh-lib.service';
 import { Messages } from './interfaces';
 
@@ -8,9 +6,25 @@ fdescribe('NgFvehLibService', () => {
   let messagesConfigurationMock: Messages;
 
   beforeEach(() => {
-    messagesConfigurationMock = { required: () => 'Field is required' };
+    messagesConfigurationMock = {
+      maxlength: errorObject =>
+        `Max: ${errorObject.requiredLength}, typed: ${
+          errorObject.actualLength
+        }`,
+    };
     service = new NgFvehLibService(messagesConfigurationMock);
   });
 
-  it('should be created', () => {});
+  describe('getMessage', () => {
+    let payload;
+    beforeEach(() => {
+      payload = { requiredLength: 1, actualLength: 2 };
+    });
+    it('should return message with payload', () => {
+      const result = service.getMessage('maxlength', payload);
+      expect(result).toEqual(
+        `Max: ${payload.requiredLength}, typed: ${payload.actualLength}`,
+      );
+    });
+  });
 });
