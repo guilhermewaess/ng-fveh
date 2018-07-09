@@ -1,15 +1,16 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { NgFvehLibService } from './ng-fveh-lib.service';
+import { Messages } from './interfaces';
 
-describe('NgFvehLibService', () => {
+fdescribe('NgFvehLibService', () => {
+  let service: NgFvehLibService;
+  let messagesConfigurationMock: Messages;
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [NgFvehLibService]
-    });
+    messagesConfigurationMock = { required: () => 'Field is required' };
+    service = new NgFvehLibService(messagesConfigurationMock);
   });
 
-  it('should be created', inject([NgFvehLibService], (service: NgFvehLibService) => {
-    expect(service).toBeTruthy();
-  }));
+  it('should be created', () => {});
 });
