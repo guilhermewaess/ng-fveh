@@ -16,9 +16,9 @@ export class ErrorsPresenterComponent {
     return Object.keys(this.field.errors);
   }
 
-  getErrorMessage(errorType: string) {
-    const errorPayload = this.field.errors[errorType];
-    return this.service.getMessage(errorType, errorPayload);
+  getErrorMessage(errorPropertyName: string) {
+    const errorPayload = this.field.errors[errorPropertyName];
+    return this.service.getMessage(errorPropertyName, errorPayload);
   }
 
   hasErrors() {

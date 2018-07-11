@@ -1,7 +1,7 @@
 import { NgFvehLibService } from './ng-fveh-lib.service';
 import { Messages } from './interfaces';
 
-fdescribe('NgFvehLibService', () => {
+describe('NgFvehLibService', () => {
   let service: NgFvehLibService;
   let messagesConfigurationMock: Messages;
 
