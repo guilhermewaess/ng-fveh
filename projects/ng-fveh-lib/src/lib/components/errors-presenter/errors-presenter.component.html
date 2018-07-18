@@ -1,0 +1,3 @@
+<div *ngIf="hasErrors()">
+  <div *ngFor="let error of getFieldErrors()">{{ getErrorMessage(error) }}</div>
+</div>
