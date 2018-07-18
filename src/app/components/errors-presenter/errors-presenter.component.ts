@@ -70,7 +70,7 @@ export class ErrorsPresenterComponent {
     return `
     import { AppComponent } from './app.component';
     import { ReactiveFormsModule } from '@angular/forms';
-    import { NgFvehLibModule } from 'ng-fveh-lib';
+    import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh-lib';
 
     const errorsMessages = {
       required: () => 'This field is required',
@@ -82,9 +82,11 @@ export class ErrorsPresenterComponent {
       declarations: [AppComponent, ErrorsPresenterComponent],
       imports: [
         ReactiveFormsModule,
-        NgFvehLibModule.forRoot(errorsMessages)
+        NgFvehLibModule
       ],
-      providers: [],
+      providers: [
+        { provide: ERROR_MESSAGES_CONFIGURATION, useValue: errorsMessages },
+      ],
       bootstrap: [AppComponent],
     })
     export class AppModule {}
