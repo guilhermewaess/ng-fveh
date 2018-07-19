@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ErrorsPresenterComponent } from './components/errors-presenter/errors-presenter.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh-lib';
+import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh';
 import ErrorsMessages from './ErrorsMessages';
 import { GroupMatchValidationComponent } from './components/group-match-validation/group-match-validation.component';
 

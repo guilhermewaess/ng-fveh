@@ -1,5 +1,5 @@
 {
-  "name": "ng-fveh",
+  "name": "ng-fveh-app",
   "author": {
     "name": "Guilherme Waess",
     "email": "guilherme.waess@gmail.com"
@@ -8,9 +8,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --aot",
-    "build": "ng build --aot",
-    "build-lib": "ng build --project=ng-fveh-lib",
-    "build-lib-prod": "ng build --project=ng-fveh-lib",
+    "build-app": "ng build --project=ng-fveh-app --aot",
+    "build-app-prod": "ng build --project=ng-fveh-app --prod",
+    "build-lib": "ng build --project=ng-fveh",
+    "build-lib-prod": "ng build --project=ng-fveh --prod",
     "test": "ng test",
     "test-lib": "ng test --project=ng-fveh-lib",
     "lint": "ng lint",

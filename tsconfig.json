@@ -12,8 +12,8 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "paths": {
-      "ng-fveh-lib": ["dist/ng-fveh-lib"],
-      "ng-fveh-lib/*": ["dist/ng-fveh-lib/*"]
+      "ng-fveh": ["dist/ng-fveh"],
+      "ng-fveh/*": ["dist/ng-fveh/*"]
     },
   }
 }
