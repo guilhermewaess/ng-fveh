@@ -13,7 +13,7 @@
     "build-lib": "ng build --project=ng-fveh",
     "build-lib-prod": "ng build --project=ng-fveh --prod",
     "test-app": "ng test --project=ng-fveh-app",
-    "test-lib": "ng test --project=ng-fveh --watch=false",
+    "test-lib": "ng test --project=ng-fveh --watch=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "publish-app": "git subtree push --prefix dist/ng-fveh-app origin gh-pages",
