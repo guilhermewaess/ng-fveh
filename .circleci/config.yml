@@ -37,9 +37,9 @@ jobs:
       - run: npm run build-lib
 
       # run tests!
-      test:
-        - run: npm run test-lib
-        - run:
+      - test:
+        run: npm run test-lib
+        run:
           name: Uploading code coverage to codecov.io
           when: always
           command: bash <(curl -s https://codecov.io/bash)
