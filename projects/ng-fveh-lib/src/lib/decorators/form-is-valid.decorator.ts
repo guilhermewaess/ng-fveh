@@ -16,7 +16,7 @@ function markControlsAsTouched(controls: { [key: string]: AbstractControl }) {
 export function fvehFormIsValid(formName: string) {
   return function(
     target: any,
-    propertyKey: string,
+    decoratedPropOrFunctionName: string,
     descriptor: PropertyDescriptor,
   ) {
     const originalMethod = descriptor.value;
