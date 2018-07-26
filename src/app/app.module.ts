@@ -9,12 +9,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh';
 import ErrorsMessages from './ErrorsMessages';
 import { GroupMatchValidationComponent } from './components/group-match-validation/group-match-validation.component';
+import { FormIsValidDecoratorComponent } from './components/form-is-valid-decorator/form-is-valid-decorator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorsPresenterComponent,
     GroupMatchValidationComponent,
+    FormIsValidDecoratorComponent,
   ],
   imports: [
     BrowserModule,
