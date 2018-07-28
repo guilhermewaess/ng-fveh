@@ -37,6 +37,6 @@ jobs:
       - run: npm run build-lib
 
       # run tests!
-      - run: npm run test-lib
+      - run: npm run test-lib-ci
       - run: bash <(curl -s https://codecov.io/bash)
 
