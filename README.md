@@ -1,2 +1,14 @@
-# ng-fveh
-NG Form Validations Errors Helper - Some helpers to help you with form validation :)
+# Ng-Fveh - Form Validations Errors Helper
+#### This lib contains some helpers to make your life easier when we talk about Angular forms.
+More info and documentation you can find [on demo page](https://guilhermewaess.github.io/ng-fveh/)
+
+### Errors presenter component - <fveh-errors-presenter [field]="form.get('field')>"
+This component will show all errors from your field.
+
+### Fveh Form Is Valid Decorator @FvehFormIsValid('formName')
+This decorator will prevent your function to be executed and will mark all controls as touched.
+
+### WIP: Fveh Group Match Validator
+This validation will validate if all controls in a group have the same value.
+For example: password and confirmPassword fields.
+If the group doesn't match, it will put an error inside all controls.
