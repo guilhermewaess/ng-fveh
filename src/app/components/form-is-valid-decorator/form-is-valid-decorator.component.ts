@@ -46,7 +46,7 @@ export class FormIsValidDecoratorComponent {
 
   getTsCode() {
     return `
-      @fvehFormIsValid('form')
+      @FvehFormIsValid('form')
       onSubmit() {
         window.alert('Submitted');
       }
