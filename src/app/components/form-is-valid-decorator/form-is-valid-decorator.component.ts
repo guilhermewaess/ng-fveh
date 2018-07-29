@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { fvehFormIsValid } from 'projects/ng-fveh-lib/src/lib/decorators/form-is-valid.decorator';
+import { FvehFormIsValid } from 'projects/ng-fveh-lib/src/lib/decorators/form-is-valid.decorator';
 
 @Component({
   selector: 'app-form-is-valid-decorator',
@@ -53,7 +53,7 @@ export class FormIsValidDecoratorComponent {
     `;
   }
 
-  @fvehFormIsValid('form')
+  @FvehFormIsValid('form')
   onSubmit() {
     window.alert('Submitted');
   }

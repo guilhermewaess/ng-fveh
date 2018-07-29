@@ -1,5 +1,5 @@
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { fvehFormIsValid } from './form-is-valid.decorator';
+import { FvehFormIsValid } from './form-is-valid.decorator';
 import { SinonSpy, spy } from 'sinon';
 
 class ComponentForTest {
@@ -30,12 +30,12 @@ class ComponentForTest {
     });
   }
 
-  @fvehFormIsValid('simpleForm')
+  @FvehFormIsValid('simpleForm')
   submitSimpleForm() {
     this.simpleFormSpy();
   }
 
-  @fvehFormIsValid('deepForm')
+  @FvehFormIsValid('deepForm')
   submitDeepForm() {
     this.deepFormSpy();
   }

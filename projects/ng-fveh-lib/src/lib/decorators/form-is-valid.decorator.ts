@@ -13,7 +13,7 @@ function markControlsAsTouched(controls: { [key: string]: AbstractControl }) {
   });
 }
 
-export function fvehFormIsValid(formName: string) {
+export function FvehFormIsValid(formName: string) {
   return function(
     target: any,
     decoratedPropOrFunctionName: string,
