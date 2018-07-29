@@ -17,9 +17,9 @@
     "test-lib-ci": "ng test --project=ng-fveh --watch=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish-app": "git subtree push --prefix dist/ng-fveh-app origin gh-pages",
+    "publish-app": "npm run build-app-prod && git subtree push --prefix dist/ng-fveh-app origin gh-pages",
     "publish-lib": "npm run build-lib-prod && npm run npm-pack",
-    "npm-pack": "cd dist/ng-fveh-lib && npm pack && npm publish"
+    "npm-pack": "cd dist/ng-fveh && npm pack && npm publish"
   },
   "private": false,
   "dependencies": {
