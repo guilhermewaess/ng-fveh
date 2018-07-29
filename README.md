@@ -1,4 +1,9 @@
 # Ng-Fveh - Form Validations Errors Helper
+
+
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/guilhermewaess/ng-fveh/tree/master)
+[![codecov](https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg)](https://codecov.io/gh/guilhermewaess/ng-fveh)
+
 #### This lib contains some helpers to make your life easier when we talk about Angular forms.
 More info and documentation you can find [on demo page](https://guilhermewaess.github.io/ng-fveh/)
 
