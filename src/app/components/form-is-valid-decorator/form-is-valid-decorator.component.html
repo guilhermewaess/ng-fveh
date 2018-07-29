@@ -2,7 +2,10 @@
   <mat-card>
     <div class="instructions">
       <h2>Form Is Valid Decorator</h2>
-      <p>This is the form should be validated on submit event</p>
+      <p>This decorator should help you with some functions that should be executed only if the form is valid (e.g. onSubmit)</p>
+      <p>Send the form name as parameter and the decorated function will be executed only if this form is valid.</p>
+      <p>Behind the scenes, decorator will be checking if controls is valid, if not, it will pass by every control (deeply)
+        marking the fields as touched.</p>
     </div>
     <mat-tab-group>
       <mat-tab label="Example">
@@ -26,6 +29,12 @@
             </button>
           </form>
         </mat-card-content>
+      </mat-tab>
+      <mat-tab label="HTML">
+        <pre [innerHTML]="getHtmlCode()"></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre [innerHTML]="getTsCode()"></pre>
       </mat-tab>
     </mat-tab-group>
   </mat-card>
