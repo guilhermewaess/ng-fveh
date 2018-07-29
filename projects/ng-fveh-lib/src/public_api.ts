@@ -3,5 +3,5 @@
  */
 
 export * from './lib/ng-fveh-lib.service';
-// export * from './lib/components/errors-presenter/errors-presenter.component';
 export * from './lib/ng-fveh-lib.module';
+export * from './lib/decorators/form-is-valid.decorator';

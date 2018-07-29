@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { FvehFormIsValid } from 'projects/ng-fveh-lib/src/lib/decorators/form-is-valid.decorator';
+import { FvehFormIsValid } from 'ng-fveh';
 
 @Component({
   selector: 'app-form-is-valid-decorator',
