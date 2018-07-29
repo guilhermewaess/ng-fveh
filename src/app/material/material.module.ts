@@ -5,9 +5,11 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatTabsModule,
+  MatButtonModule,
 } from '@angular/material';
 
 const components = [
+  MatButtonModule,
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,

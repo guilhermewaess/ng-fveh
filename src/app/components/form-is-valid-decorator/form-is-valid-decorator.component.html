@@ -1,0 +1,41 @@
+<div>
+  <mat-card>
+    <div class="instructions">
+      <h2>Form Is Valid Decorator</h2>
+      <p>This decorator should help you with some functions that should be executed only if the form is valid (e.g. onSubmit)</p>
+      <p>Send the form name as parameter and the decorated function will be executed only if this form is valid.</p>
+      <p>Behind the scenes, decorator will be checking if controls is valid, if not, it will pass by every control (deeply)
+        marking the fields as touched.</p>
+    </div>
+    <mat-tab-group>
+      <mat-tab label="Example">
+        <mat-card-content>
+          <form [formGroup]="form"
+            (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="standard">
+              <mat-label>Click on the button and watch the field validating</mat-label>
+              <input matInput
+                formControlName="input">
+              <mat-hint>Click on the button to test decorator</mat-hint>
+              <mat-error>
+                <fveh-errors-presenter [field]="form.get('input')"></fveh-errors-presenter>
+              </mat-error>
+            </mat-form-field>
+            <button type="submit"
+              mat-stroked-button
+              color="primary"
+              class="button-submit">
+              Click-me
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-tab>
+      <mat-tab label="HTML">
+        <pre [innerHTML]="getHtmlCode()"></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre [innerHTML]="getTsCode()"></pre>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
