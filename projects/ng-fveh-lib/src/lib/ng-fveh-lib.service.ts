@@ -1,4 +1,4 @@
-import { Injectable, Inject, Optional } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { Messages } from './interfaces';
 import { ERROR_MESSAGES_CONFIGURATION } from './Injectors';
 
