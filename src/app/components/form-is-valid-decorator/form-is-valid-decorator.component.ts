@@ -46,10 +46,12 @@ export class FormIsValidDecoratorComponent {
 
   getTsCode() {
     return `
-      @FvehFormIsValid('form')
-      onSubmit() {
-        window.alert('Submitted');
-      }
+    import { FvehFormIsValid } from 'ng-fveh';
+
+    @FvehFormIsValid('form')
+    onSubmit() {
+      window.alert('Submitted');
+    }
     `;
   }
 
