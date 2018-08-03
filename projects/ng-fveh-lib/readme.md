@@ -13,7 +13,7 @@ This decorator will prevent your function to be executed and will mark all contr
 This custom validator should help you with field match validations, e.g. password and confirm password.
 To use it, you should create a new group in your form and send a extra parameters after controls:
 
-    validator: FvehValidators.groupMatch(['E-mail', 'Email Confirmation'])
+    { validator: FvehValidators.groupMatch(['E-mail', 'Email Confirmation']) }
   
 **Param FrieldlyFieldNames:** If the fields doens't match, it will generate a new error on field with this as a payload
 
