@@ -10,6 +10,8 @@ import { NgFvehLibModule, ERROR_MESSAGES_CONFIGURATION } from 'ng-fveh';
 import ErrorsMessages from './ErrorsMessages';
 import { FormIsValidDecoratorComponent } from './components/form-is-valid-decorator/form-is-valid-decorator.component';
 import { GroupMatchValidatorComponent } from './components/group-match-validator/group-match-validator.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { GroupMatchValidatorComponent } from './components/group-match-validator
     ErrorsPresenterComponent,
     FormIsValidDecoratorComponent,
     GroupMatchValidatorComponent,
+    ToolbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

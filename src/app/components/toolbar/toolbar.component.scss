@@ -1,0 +1,27 @@
+.mat-toolbar {
+  justify-content: space-between;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.nav-github-logo {
+  height: 21px;
+  margin: 0 7px 2px 0;
+  vertical-align: middle;
+}
+
+.welcome-texts {
+  text-align: center;
+
+  .welcome-text-title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .welcome-text-subtitle {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 17px;
+  }
+}

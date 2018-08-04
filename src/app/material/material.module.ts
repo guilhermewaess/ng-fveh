@@ -6,14 +6,18 @@ import {
   MatInputModule,
   MatTabsModule,
   MatButtonModule,
+  MatToolbarModule,
+  MatIconModule,
 } from '@angular/material';
 
 const components = [
   MatButtonModule,
   MatCardModule,
   MatFormFieldModule,
+  MatIconModule,
   MatInputModule,
   MatTabsModule,
+  MatToolbarModule
 ];
 
 @NgModule({
