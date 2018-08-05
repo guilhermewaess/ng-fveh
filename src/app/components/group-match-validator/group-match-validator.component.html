@@ -3,10 +3,10 @@
     <div class="instructions">
       <h2>Group Match Validator</h2>
       <p>This custom validator should help you with field match validations, e.g. password and confirm password.</p>
-      <p>To use it, you should create a new group in your form and send a extra parameters after controls:</p>
-      <pre>validator: FvehValidators.groupMatch(['E-mail', 'Email Confirmation'])</pre>
+      <p>To use it, you should create a new group in your form and send an extra parameters after controls:</p>
+      <pre>{{'{'}} validator: FvehValidators.groupMatch(['E-mail', 'Email Confirmation']) }</pre>
 
-      <p>Param FrieldlyFieldNames: If the fields doens't match, it will generate a new error on field with this as a payload</p>
+      <p>Param FrieldlyFieldNames: If the fields doesn't match, it will generate a new error on field with this as a payload</p>
       <pre>
       Error: {{'{'}}
         fvehGroupMatch: {{'{'}}
@@ -14,7 +14,7 @@
         },
       }
       </pre>
-      <p>Then you can use this error for any purposes :), se the example bellow.</p>
+      <p>Then you can use this error for any purposes :), see the example bellow.</p>
     </div>
 
     <mat-tab-group>

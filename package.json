@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "ng serve --aot",
     "build-app": "ng build --project=ng-fveh-app --aot",
-    "build-app-prod": "ng build --project=ng-fveh-app --prod --base-href=https://guilhermewaess.github.io/ng-fveh/",
+    "build-app-prod": "ng build --project=ng-fveh-app --prod --base-href=/ng-fveh/",
     "build-lib": "ng build --project=ng-fveh",
     "build-lib-prod": "ng build --project=ng-fveh --prod",
     "test-app": "ng test --project=ng-fveh-app",
