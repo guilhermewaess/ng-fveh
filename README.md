@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://circleci.com/gh/guilhermewaess/ng-fveh/tree/master"><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Build Status"></a>
   <a href="https://codecov.io/gh/guilhermewaess/ng-fveh"><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Coverage Status"></a>
-  <a href="https://www.npmjs.com/package/ng-fveh"><img src="ttps://badge.fury.io/js/ng-fveh.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/ng-fveh"><img src="https://badge.fury.io/js/ng-fveh.svg" alt="Version"></a>
 </p>
 
 # Ng-Fveh - Form Validations Errors Helper
