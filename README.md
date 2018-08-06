@@ -1,9 +1,9 @@
 <p align="center"><a href="https://guilhermewaess.github.io/ng-fveh" target="_blank"><img width="500"src="https://github.com/guilhermewaess/ng-fveh/raw/master/src/assets/logo.png"></a></p>
 
 <p align="center">
-  <a href="https://circleci.com/gh/guilhermewaess/ng-fveh/tree/master" target="_blank><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Build Status"></a>
-  <a href="https://codecov.io/gh/guilhermewaess/ng-fveh" target="_blank><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Coverage Status" target="_blank></a>
-  <a href="https://www.npmjs.com/package/ng-fveh"><img src="https://badge.fury.io/js/ng-fveh.svg" alt="Version"></a>
+  <a href="https://circleci.com/gh/guilhermewaess/ng-fveh/tree/master" target="_blank"><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Build Status"></a>
+  <a href="https://codecov.io/gh/guilhermewaess/ng-fveh" target="_blank"><img src="https://codecov.io/gh/guilhermewaess/ng-fveh/branch/master/graph/badge.svg" alt="Coverage Status"></a>
+  <a href="https://www.npmjs.com/package/ng-fveh" target="_blank"><img src="https://badge.fury.io/js/ng-fveh.svg" alt="Version"></a>
 </p>
 
 # Ng-Fveh - Form Validations Errors Helper
