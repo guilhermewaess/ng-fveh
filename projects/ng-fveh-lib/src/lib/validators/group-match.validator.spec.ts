@@ -26,8 +26,21 @@ describe('groupMatchValidator', () => {
     };
     matchFunction = groupMatch(friendlyFieldNames);
   });
+  describe('when match group which is pristine', () => {
+    beforeEach(() => {
+      formGroup.markAsPristine();
+      result = matchFunction(formGroup);
+    });
+    it('should return null', () => {
+      expect(result).toBeNull();
+    });
+    it('should not change error property', () => {
+      expect(formField1.errors).toBeNull();
+    });
+  });
   describe('when match group which is not touched', () => {
     beforeEach(() => {
+      formGroup.markAsDirty();
       formGroup.markAsUntouched();
       result = matchFunction(formGroup);
     });
@@ -47,6 +60,7 @@ describe('groupMatchValidator', () => {
   });
   describe('when match group which is touched and not match', () => {
     beforeEach(() => {
+      formGroup.markAsDirty();
       formGroup.markAsTouched();
       formField1.setValue('1');
       formField2.setValue('2');
@@ -68,6 +82,7 @@ describe('groupMatchValidator', () => {
   });
   describe('when match group which is touched and fields do match', () => {
     beforeEach(() => {
+      formGroup.markAsDirty();
       formGroup.markAsTouched();
       formField1.setValue('1');
       formField2.setValue('1');
@@ -87,6 +102,7 @@ describe('groupMatchValidator', () => {
   });
   describe('when match group which is touched and fields do match and theres no other errors on fields', () => {
     beforeEach(() => {
+      formGroup.markAsDirty();
       formGroup.markAsTouched();
       formField1.setValue('1');
       formField2.setValue('1');

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { FvehValidators } from 'ng-fveh';
 
@@ -6,6 +6,7 @@ import { FvehValidators } from 'ng-fveh';
   selector: 'app-group-match-validator',
   templateUrl: './group-match-validator.component.html',
   styleUrls: ['./group-match-validator.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GroupMatchValidatorComponent {
   form: FormGroup;
@@ -64,7 +65,7 @@ export class GroupMatchValidatorComponent {
       .replace(/>/gi, '&gt');
   }
 
-  getTsCode(){
+  getTsCode() {
     return `
     import { FvehValidators } from 'ng-fveh';
 

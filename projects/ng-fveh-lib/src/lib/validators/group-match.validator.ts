@@ -47,9 +47,13 @@ function validateIfValuesMatch(controlValues: any) {
 }
 
 export function groupMatch(friendlyFieldNames: string[]) {
-  return ({ value, touched, controls }) => {
+  return ({ value, touched, pristine, controls }) => {
     const error = createGroupMatchError(friendlyFieldNames);
     const isGroupMatching = validateIfValuesMatch(value);
+
+    if (pristine) {
+      return null;
+    }
 
     if (touched && isGroupMatching) {
       clearErrorOnFields('fvehGroupMatch', controls);
