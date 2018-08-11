@@ -2,8 +2,24 @@
   "name": "ng-fveh",
   "author": {
     "name": "Guilherme Waess",
-    "email": "guilherme.waess@gmail.com"
+    "email": "guilherme.waess@gmail.com",
+    "url": "https://github.com/guilhermewaess"
   },
+  "description": "NG-FVEH - Some helpers to help you with form validation :)",
+  "license": "MIT",
+  "homepage": "http://guilhermewaess.github.io/ng-fveh",
+  "keywords": [
+    "angular",
+    "form",
+    "reactive",
+    "reactive forms",
+    "validation",
+    "form validation",
+    "errors",
+    "form errors",
+    "validation helpers",
+    "errors presenter"
+  ],
   "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
